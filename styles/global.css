@@ -45,3 +45,13 @@ main {
   border-top: 1px solid #fff3;
   animation: fadeIn .5s ease-in .5s both;
 }
+
+@media (prefers-reduced-motion: reduce) {
+
+  header,
+  header svg,
+  main {
+    animation: none;
+  }
+
+}
