@@ -58,6 +58,7 @@ header svg {
 }
 
 main {
+  padding: 2em 0;
   border-top: 1px solid #fff3;
   animation: fadeIn .5s ease-in .5s both;
 }
