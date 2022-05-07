@@ -1,5 +1,5 @@
 :root {
-  --backdrop-filter: blur(50px);
+  --backdrop-filter: blur(100px);
   --font-family-header: 'League Spartan Variable', 'League Spartan';
   --font-family-body: 'Amelia';
   --font-size-base: 24px;
