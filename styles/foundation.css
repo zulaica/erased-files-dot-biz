@@ -15,6 +15,10 @@ html {
   color: #fff;
 }
 
+body {
+  background-color: #846897;
+}
+
 header,
 main,
 footer {
