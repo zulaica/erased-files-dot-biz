@@ -1,0 +1,29 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+header,
+main,
+footer {
+  width: 80%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

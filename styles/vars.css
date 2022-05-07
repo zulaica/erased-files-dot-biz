@@ -1,0 +1,6 @@
+:root {
+  --backdrop-filter: blur(50px) brightness(70%);
+  --font-size-base: 20px;
+  --font-line-height-base: 1.5;
+  --max-width: 1150px;
+}

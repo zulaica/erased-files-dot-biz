@@ -1,0 +1,42 @@
+body {
+  background-image: url('../images/background/background@2xRGB.jpg');
+  background-image: url('../images/background/background@2xRGB.webp');
+  background-image: -webkit-image-set(url("../images/background/background@1xRGB.webp") 1x,
+      url("../images/background/background@2xRGB.webp") 2x,
+      url("../images/background/background@3xRGB.webp") 3x,
+      url("../images/background/background@4xRGB.webp") 4x);
+  background-image: image-set(url("../images/background/background@1xRGB.webp") 1x,
+      url("../images/background/background@2xRGB.webp") 2x,
+      url("../images/background/background@3xRGB.webp") 3x,
+      url("../images/background/background@4xRGB.webp") 4x);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .container {
+    -webkit-backdrop-filter: var(--backdrop-filter);
+    backdrop-filter: var(--backdrop-filter);
+  }
+}
+
+header {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff3;
+}
+
+header svg {
+  fill: #fff;
+  width: 100%;
+  animation: fadeIn 1.5s ease-in;
+}
