@@ -1,2 +1,8 @@
+# Images
 *.jpg           binary
 *.webp          binary
+
+# Fonts
+*.ttf           binary
+*.woff          binary
+*.woff2         binary
