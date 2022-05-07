@@ -1,6 +1,7 @@
 html {
   font-size: var(--font-size-base);
   line-height: var(--font-line-height-base);
+  color: #fff;
 }
 
 body {
@@ -52,7 +53,7 @@ header {
 }
 
 header svg {
-  fill: #fff;
+  fill: currentColor;
   width: 100%;
   animation: fadeIn 1.5s ease-in;
 }
