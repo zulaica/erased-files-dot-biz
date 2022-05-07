@@ -16,6 +16,11 @@ html {
 }
 
 body {
+  font-synthesis: none;
+  font-family: var(--font-family-body);
+  font-weight: 300;
+  letter-spacing: .0325em;
+  text-shadow: -1px 1px 0 #84689744;
   background-color: #846897;
 }
 
