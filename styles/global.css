@@ -12,12 +12,12 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100%;
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
