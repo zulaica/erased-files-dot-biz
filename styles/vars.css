@@ -1,5 +1,5 @@
 :root {
-  --backdrop-filter: blur(50px) brightness(70%);
+  --backdrop-filter: blur(50px);
   --font-family-header: 'League Spartan Variable', 'League Spartan';
   --font-size-base: 20px;
   --font-line-height-base: 1.5;
