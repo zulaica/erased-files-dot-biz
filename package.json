@@ -1,0 +1,19 @@
+{
+  "name": "erased-files-dot-biz",
+  "version": "1.0.0",
+  "description": "Website for the band Erased Files",
+  "scripts": {
+    "start": "python3 -m http.server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Zulaica",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zulaica/erased-files-dot-biz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zulaica/erased-files-dot-biz/issues"
+  },
+  "homepage": "https://github.com/zulaica/erased-files-dot-biz#readme"
+}
