@@ -1,3 +1,8 @@
+html {
+  font-size: var(--font-size-base);
+  line-height: var(--font-line-height-base);
+}
+
 body {
   background-image: url('../images/background/background@2xRGB.jpg');
   background-image: url('../images/background/background@2xRGB.webp');
