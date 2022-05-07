@@ -36,23 +36,3 @@ h6 {
   font-family: var(--font-family-header);
   font-weight: 700;
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-1rem);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
