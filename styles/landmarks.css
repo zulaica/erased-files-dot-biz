@@ -1,0 +1,29 @@
+header {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideDown 1s ease-in-out;
+}
+
+header svg {
+  fill: currentColor;
+  width: 100%;
+  animation: fadeIn 1.5s ease-in;
+}
+
+main {
+  padding: 2em 0;
+  border-top: 1px solid #fff3;
+  animation: fadeIn .5s ease-in .5s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  header,
+  header svg,
+  main {
+    animation: none;
+  }
+
+}

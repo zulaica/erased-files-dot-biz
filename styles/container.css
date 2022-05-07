@@ -1,11 +1,5 @@
-html {
-  font-size: var(--font-size-base);
-  line-height: var(--font-line-height-base);
-  color: #fff;
-}
-
-.container::before,
-.container::after {
+#container::before,
+#container::after {
   content: '';
   position: fixed;
   width: 100vw;
@@ -13,7 +7,7 @@ html {
   z-index: -1;
 }
 
-.container::before {
+#container::before {
   background-image: url('../images/background/background@2xRGB.jpg');
   background-image: url('../images/background/background@2xRGB.webp');
   background-image: -webkit-image-set(url("../images/background/background@1xRGB.webp") 1x,
@@ -30,55 +24,25 @@ html {
   background-attachment: fixed;
 }
 
-.container {
+#container {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .container::before {
+  #container::before {
     background-size: 125%;
   }
 
-  .container::after {
+  #container::after {
     -webkit-backdrop-filter: var(--backdrop-filter);
     backdrop-filter: var(--backdrop-filter);
   }
 }
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .container::before {
+  #container::before {
     filter: var(--backdrop-filter);
     transform: scale(1.25);
   }
-}
-
-header {
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: slideDown 1s ease-in-out;
-}
-
-header svg {
-  fill: currentColor;
-  width: 100%;
-  animation: fadeIn 1.5s ease-in;
-}
-
-main {
-  padding: 2em 0;
-  border-top: 1px solid #fff3;
-  animation: fadeIn .5s ease-in .5s both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  header,
-  header svg,
-  main {
-    animation: none;
-  }
-
 }
