@@ -28,7 +28,7 @@
   margin: 0;
 }
 
-[aria-labelledby="discography"] article :where(dl dd, .songs-panel ol) {
+[aria-labelledby="discography"] article :where(dl dd, .songs-panel table) {
   margin: 0;
   font-size: 0.825em;
 }
