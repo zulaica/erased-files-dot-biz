@@ -24,6 +24,7 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  #container::before,
   header,
   header svg,
   main,
