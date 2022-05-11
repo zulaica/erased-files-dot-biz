@@ -48,6 +48,11 @@ article > h3 {
   letter-spacing: -0.0325em;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 footer p {
   font-family: var(--font-family-header);
   font-size: 0.625em;
