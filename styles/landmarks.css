@@ -3,19 +3,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: slideDown 1s ease-in-out;
+  animation: slideDown .75s ease-in-out;
 }
 
 header svg {
   fill: currentColor;
   width: 100%;
-  animation: fadeIn 1.5s ease-in;
+  animation: fadeIn 1.25s ease-in-out .25s both;
+  mix-blend-mode: overlay;
 }
 
 main {
   padding: 2em 0;
   border-top: var(--border);
-  animation: fadeIn .5s ease-in .5s both;
+  animation: fadeIn .5s ease-in-out 1s both;
 }
 
 @media (prefers-reduced-motion: reduce) {
