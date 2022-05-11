@@ -1,0 +1,51 @@
+[aria-labelledby="discography"] article {
+  display: grid;
+  column-gap: 2em;
+  grid-template-columns: 34% 1fr;
+}
+
+[aria-labelledby="discography"] article h3 {
+  grid-column: 1 / -1;
+}
+
+[aria-labelledby="discography"] article :where(dl dt, .track-listing p) {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+}
+
+[aria-labelledby="discography"] article dd {
+  margin: 0;
+}
+
+[aria-labelledby="discography"] article .track-listing ol {
+  padding: 0;
+  list-style-position: inside;
+}
+
+[aria-labelledby="discography"] article [aria-labelledby$="-details"] {
+  display: grid;
+  color: #dfbfef;
+  font-size: 0.5em;
+  letter-spacing: 0.325em;
+  text-transform: uppercase;
+}
+
+[aria-labelledby="discography"]
+  article
+  [aria-labelledby$="-details"]
+  dd:first-of-type {
+  line-height: 0;
+  margin-bottom: 1em;
+}
+
+[aria-labelledby="discography"] article [aria-labelledby$="-details"] img {
+  border: var(--border);
+  width: 100%;
+  height: auto;
+}
+
+[aria-labelledby="discography"] article [aria-labelledby$="-credits"] {
+  grid-column: 1 / -1;
+  font-size: 0.75em;
+}
