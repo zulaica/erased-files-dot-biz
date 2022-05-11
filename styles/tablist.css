@@ -40,6 +40,6 @@
   padding: 0.25em 0;
 }
 
-.tablist :where(.songs-panel, .listen-panel) {
+.tablist :where(.overview-panel, .listen-panel) {
   display: none;
 }
