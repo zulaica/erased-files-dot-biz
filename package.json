@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Website for the band Erased Files",
   "scripts": {
-    "start": "python3 -m http.server",
+    "start": "python3 -m http.server --directory ./source/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "David Zulaica",
