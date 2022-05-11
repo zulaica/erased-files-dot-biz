@@ -40,6 +40,6 @@
   padding: 0.25em 0;
 }
 
-.tablist :where(.overview-panel, .listen-panel) {
+.tablist div[class$="-panel"][hidden] {
   display: none;
 }

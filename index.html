@@ -43,6 +43,7 @@
       crossorigin="anonymous"
     />
     <link rel="preload" href="styles/stylesheet.css" as="style" />
+    <link rel="modulepreload" href="scripts/tablist.js" as="script" />
 
     <link rel="icon" type="image/gif" href="/images/favicon.gif" />
     <link href="styles/stylesheet.css" media="screen" rel="stylesheet" />
@@ -56,6 +57,8 @@
         user-scalable=no,
         viewport-fit=cover"
     />
+
+    <script src="scripts/tablist.js" type="module" defer></script>
   </head>
   <body>
     <div id="container">
@@ -114,6 +117,8 @@
                     name="trunk-volume-tablist"
                     id="overview"
                     type="radio"
+                    aria-expanded="true"
+                    checked
                   />
                   <label for="overview">Overview</label>
                 </div>
@@ -122,12 +127,17 @@
                     name="trunk-volume-tablist"
                     id="songs"
                     type="radio"
-                    checked
+                    aria-expanded="false"
                   />
                   <label for="songs">Songs</label>
                 </div>
                 <div class="tablist-control">
-                  <input name="trunk-volume-tablist" id="listen" type="radio" />
+                  <input
+                    name="trunk-volume-tablist"
+                    id="listen"
+                    type="radio"
+                    aria-expanded="false"
+                  />
                   <label for="listen">Listen</label>
                 </div>
               </fieldset>
@@ -153,7 +163,7 @@
                   <dd>Made in Portland, OR</dd>
                 </dl>
               </div>
-              <div class="songs-panel">
+              <div class="songs-panel" hidden>
                 <table>
                   <thead>
                     <tr>
@@ -181,7 +191,7 @@
                   </tbody>
                 </table>
               </div>
-              <div class="listen-panel">
+              <div class="listen-panel" hidden>
                 <dl>
                   <dt>Listen</dt>
                   <dd>Bandcamp</dd>
