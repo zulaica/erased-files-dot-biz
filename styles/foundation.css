@@ -68,10 +68,10 @@ a {
   text-decoration: underline;
   text-decoration-color: #6c5095;
   text-decoration-thickness: 2px;
-  text-underline-offset: 0.325em;
+  text-underline-offset: 0.125em;
   transition: text-underline-offset 0.25s ease-in-out;
 }
 
 a:hover {
-  text-underline-offset: 0.125em;
+  text-underline-offset: 0.325em;
 }
