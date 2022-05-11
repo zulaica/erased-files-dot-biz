@@ -10,7 +10,7 @@
 
 @keyframes slideDown {
   0% {
-    transform: translateY(-.5rem);
+    transform: translateY(-0.5rem);
   }
 
   100% {

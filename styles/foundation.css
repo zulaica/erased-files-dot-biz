@@ -19,7 +19,7 @@ body {
   font-synthesis: none;
   font-family: var(--font-family-body);
   font-weight: 300;
-  letter-spacing: .0325em;
+  letter-spacing: 0.0325em;
   text-shadow: -1px 1px 0 #84689744;
   background-color: #846897;
 }
@@ -36,8 +36,8 @@ section > h2 {
   font-family: var(--font-family-header);
   font-size: 1.3125rem;
   font-weight: 800;
-  font-variation-settings: 'wght' 850;
-  letter-spacing: .325em;
+  font-variation-settings: "wght" 850;
+  letter-spacing: 0.325em;
   text-transform: uppercase;
 }
 
@@ -45,5 +45,5 @@ article > h3 {
   font-family: var(--font-family-body);
   font-size: 1.1875rem;
   font-weight: normal;
-  letter-spacing: -.0325em;
+  letter-spacing: -0.0325em;
 }

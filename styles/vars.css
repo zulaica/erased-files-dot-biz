@@ -1,7 +1,7 @@
 :root {
   --backdrop-filter: blur(100px);
-  --font-family-header: 'League Spartan Variable', 'League Spartan';
-  --font-family-body: 'Amelia';
+  --font-family-header: "League Spartan Variable", "League Spartan";
+  --font-family-body: "Amelia";
   --font-size-base: 24px;
   --font-line-height-base: 1.5;
   --max-width: 1150px;
