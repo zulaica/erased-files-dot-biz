@@ -19,10 +19,10 @@
     "build": "npm run build:clean && npm run build:style && npm run build:script && npm run build:html && npm run build:assets",
     "build:assets": "node ./lib/assets.mjs",
     "build:clean": "rm -rf build",
-    "build:html": "posthtml source/index.html --output build/index.html",
+    "build:html": "posthtml source/index.html -o build/index.html",
     "build:script": "browserify source/script.[hash].js -o build/script.[hash].js -t [ babelify ]",
-    "build:style": "postcss source/stylesheet.[hash].css --output build/stylesheet.[hash].css",
-    "dev": "python3 -m http.server --directory ./source/",
+    "build:style": "postcss source/stylesheet.[hash].css -o build/stylesheet.[hash].css",
+    "dev": "python3 -m http.server -d ./source/",
     "gh-pages": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
