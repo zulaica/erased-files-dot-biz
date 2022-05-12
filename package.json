@@ -1,14 +1,12 @@
 {
   "name": "erased-files-dot-biz",
+  "author": "David Zulaica",
   "version": "1.0.0",
   "description": "Website for the band Erased Files",
-  "scripts": {
-    "gh-pages": "git subtree push --prefix source git@github.com:zulaica/erased-files-dot-biz.git gh-pages",
-    "start": "python3 -m http.server --directory ./source/",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "David Zulaica",
   "license": "UNLICENSED",
+  "engines": {
+    "node": ">=16"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zulaica/erased-files-dot-biz.git"
@@ -16,5 +14,10 @@
   "bugs": {
     "url": "https://github.com/zulaica/erased-files-dot-biz/issues"
   },
-  "homepage": "https://github.com/zulaica/erased-files-dot-biz#readme"
+  "homepage": "https://github.com/zulaica/erased-files-dot-biz#readme",
+  "scripts": {
+    "gh-pages": "git subtree push --prefix source git@github.com:zulaica/erased-files-dot-biz.git gh-pages",
+    "start": "python3 -m http.server --directory ./source/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
