@@ -25,7 +25,7 @@ https://www.erasedfiles.biz
 ## Development
 
 1. Clone and pull the repository.
-2. Run `npm install` fro the project directory
+2. Run `npm install` from the project directory
 
 ## Scripts
 
