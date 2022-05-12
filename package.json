@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Website for the band Erased Files",
   "scripts": {
+    "gh-pages": "git subtree push --prefix source git@github.com:zulaica/erased-files-dot-biz.git gh-pages",
     "start": "python3 -m http.server --directory ./source/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
