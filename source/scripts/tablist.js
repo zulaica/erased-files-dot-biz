@@ -25,19 +25,20 @@ const activatePanel = (target) => {
   panel.removeAttribute("hidden");
 };
 
-tablistControls.forEach((tablistControl) => {
-  tablistControl.addEventListener("change", (event) => {
-    event.preventDefault();
+export const tablistSetup = () =>
+  tablistControls.forEach((tablistControl) => {
+    tablistControl.addEventListener("change", (event) => {
+      event.preventDefault();
 
-    const { target } = event;
-    const siblings = [...tablistControls].filter(
-      (tablistControl) => tablistControl !== target
-    );
+      const { target } = event;
+      const siblings = [...tablistControls].filter(
+        (tablistControl) => tablistControl !== target
+      );
 
-    siblings.forEach((sibling) => {
-      deactivatePanel(sibling);
+      siblings.forEach((sibling) => {
+        deactivatePanel(sibling);
+      });
+
+      activatePanel(target);
     });
-
-    activatePanel(target);
   });
-});
