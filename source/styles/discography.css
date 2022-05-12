@@ -2,7 +2,7 @@
   display: grid;
   column-gap: 1.5em;
   grid-template-columns: 34% 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
 }
 
 [aria-labelledby='discography'] article h3 {
@@ -20,6 +20,9 @@
   grid-column: 2;
   grid-row: 1 / -1;
   margin: 1.25em 0;
+}
+[aria-labelledby='discography'] article dl {
+  margin-top: 0;
 }
 
 [aria-labelledby='discography'] article :where(dl dt, .track-listing p) {

@@ -1,10 +1,14 @@
 .tablist {
-  position: relative;
+  display: grid;
+  grid-template-areas:
+    'controls'
+    'panels';
 }
 
 .tablist fieldset {
   border: 0;
   padding: 0;
+  grid-area: controls;
 }
 
 .tablist fieldset legend {
@@ -42,9 +46,7 @@
 }
 
 .tablist div[class$='-panel'] {
-  position: absolute;
-  width: 100%;
-  padding: 0.25em 0;
+  grid-area: panels;
   opacity: 1;
   transition: opacity 0.25s ease-in;
 }
