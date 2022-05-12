@@ -36,10 +36,10 @@
   cursor: default;
 }
 
-.tablist div[class$="-panel"] {
+.tablist div[class$='-panel'] {
   padding: 0.25em 0;
 }
 
-.tablist div[class$="-panel"][hidden] {
+.tablist div[class$='-panel'][hidden] {
   display: none;
 }

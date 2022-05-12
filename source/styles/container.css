@@ -83,7 +83,7 @@
   grid-template-rows: auto 1fr auto;
 }
 
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+@supports (backdrop-filter: none) {
   #container::before {
     background-size: 125%;
   }
@@ -94,7 +94,7 @@
   }
 }
 
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+@supports not (backdrop-filter: none) {
   #container::before {
     filter: var(--backdrop-filter);
     transform: scale(1.25);

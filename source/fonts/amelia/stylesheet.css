@@ -1,120 +1,113 @@
 @font-face {
-    font-family: 'Amelia';
-    src: local('Amelia-Italic'),
-        url('Amelia-Italic.woff2') format('woff2'),
-        url('Amelia-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Amelia';
+  src: local('Amelia-Italic'), url('Amelia-Italic.woff2') format('woff2'),
+    url('Amelia-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia';
-    src: local('Amelia-Black'),
-        url('Amelia-Black.woff2') format('woff2'),
-        url('Amelia-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Amelia';
+  src: local('Amelia-Black'), url('Amelia-Black.woff2') format('woff2'),
+    url('Amelia-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia';
-    src: local('Amelia-BoldItalic'),
-        url('Amelia-BoldItalic.woff2') format('woff2'),
-        url('Amelia-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Amelia';
+  src: local('Amelia-BoldItalic'),
+    url('Amelia-BoldItalic.woff2') format('woff2'),
+    url('Amelia-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia';
-    src: local('Amelia-Bold'),
-        url('Amelia-Bold.woff2') format('woff2'),
-        url('Amelia-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Amelia';
+  src: local('Amelia-Bold'), url('Amelia-Bold.woff2') format('woff2'),
+    url('Amelia-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia';
-    src: local('Amelia'),
-        url('Amelia.woff2') format('woff2'),
-        url('Amelia.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Amelia';
+  src: local('Amelia'), url('Amelia.woff2') format('woff2'),
+    url('Amelia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia';
-    src: local('AmeliaBlack-BlackItalic'),
-        url('AmeliaBlack-BlackItalic.woff2') format('woff2'),
-        url('AmeliaBlack-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Amelia';
+  src: local('AmeliaBlack-BlackItalic'),
+    url('AmeliaBlack-BlackItalic.woff2') format('woff2'),
+    url('AmeliaBlack-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia Oblicua';
-    src: local('Amelia-OblicuaBold'),
-        url('Amelia-OblicuaBold.woff2') format('woff2'),
-        url('Amelia-OblicuaBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Amelia Oblicua';
+  src: local('Amelia-OblicuaBold'),
+    url('Amelia-OblicuaBold.woff2') format('woff2'),
+    url('Amelia-OblicuaBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia Oblicua';
-    src: local('Amelia-Oblicua'),
-        url('Amelia-Oblicua.woff2') format('woff2'),
-        url('Amelia-Oblicua.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Amelia Oblicua';
+  src: local('Amelia-Oblicua'), url('Amelia-Oblicua.woff2') format('woff2'),
+    url('Amelia-Oblicua.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia';
-    src: local('Amelia-LightItalic'),
-        url('Amelia-LightItalic.woff2') format('woff2'),
-        url('Amelia-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Amelia';
+  src: local('Amelia-LightItalic'),
+    url('Amelia-LightItalic.woff2') format('woff2'),
+    url('Amelia-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia Oblicua';
-    src: local('AmeliaOblicua-Light'),
-        url('AmeliaOblicua-Light.woff2') format('woff2'),
-        url('AmeliaOblicua-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Amelia Oblicua';
+  src: local('AmeliaOblicua-Light'),
+    url('AmeliaOblicua-Light.woff2') format('woff2'),
+    url('AmeliaOblicua-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia';
-    src: local('Amelia-Light'),
-        url('Amelia-Light.woff2') format('woff2'),
-        url('Amelia-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Amelia';
+  src: local('Amelia-Light'), url('Amelia-Light.woff2') format('woff2'),
+    url('Amelia-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amelia Oblicua';
-    src: local('Amelia-OblicuaBlack'),
-        url('Amelia-OblicuaBlack.woff2') format('woff2'),
-        url('Amelia-OblicuaBlack.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Amelia Oblicua';
+  src: local('Amelia-OblicuaBlack'),
+    url('Amelia-OblicuaBlack.woff2') format('woff2'),
+    url('Amelia-OblicuaBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
-
