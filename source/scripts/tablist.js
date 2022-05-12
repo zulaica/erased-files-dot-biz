@@ -13,7 +13,7 @@ const deactivatePanel = (sibling) => {
   sibling.removeAttribute('checked');
   sibling.setAttribute('aria-expanded', false);
 
-  panel.setAttribute('hidden', true);
+  panel.setAttribute('aria-hidden', true);
 };
 
 const activatePanel = (target) => {
@@ -22,7 +22,7 @@ const activatePanel = (target) => {
   target.setAttribute('checked', true);
   target.setAttribute('aria-expanded', true);
 
-  panel.removeAttribute('hidden');
+  panel.removeAttribute('aria-hidden');
 };
 
 export const tablistSetup = () =>

@@ -1,3 +1,7 @@
+.tablist {
+  position: relative;
+}
+
 .tablist fieldset {
   border: 0;
   padding: 0;
@@ -29,6 +33,7 @@
   padding: 0.325em 1em;
   text-shadow: none;
   cursor: pointer;
+  transition: background-color 0.25s ease-in;
 }
 
 .tablist .tablist-control input:checked + label {
@@ -37,9 +42,13 @@
 }
 
 .tablist div[class$='-panel'] {
+  position: absolute;
+  width: 100%;
   padding: 0.25em 0;
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
 }
 
-.tablist div[class$='-panel'][hidden] {
-  display: none;
+.tablist div[class$='-panel'][aria-hidden] {
+  opacity: 0;
 }
