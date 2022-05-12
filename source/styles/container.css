@@ -1,0 +1,102 @@
+#container::before,
+#container::after {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#container::before {
+  background-image: linear-gradient(
+      to right top,
+      #cb9ca233,
+      #a195bd33,
+      #ae73a333,
+      #84689733
+    ),
+    url('../images/background/background@2xRGB.jpg'),
+    linear-gradient(
+      to right top,
+      #cb9ca244,
+      #a195bd44,
+      #ae73a344,
+      #84689744,
+      #cb9ca244,
+      #a195bd44,
+      #ae73a344,
+      #84689744
+    );
+  background-image: linear-gradient(
+      to right top,
+      #cb9ca233,
+      #a195bd33,
+      #ae73a333,
+      #84689733
+    ),
+    url('../images/background/background@2xRGB.webp'),
+    linear-gradient(
+      to right top,
+      #cb9ca244,
+      #a195bd44,
+      #ae73a344,
+      #84689744,
+      #cb9ca244,
+      #a195bd44,
+      #ae73a344,
+      #84689744
+    );
+  background-image: linear-gradient(
+      to right top,
+      #cb9ca233,
+      #a195bd33,
+      #ae73a333,
+      #84689733
+    ),
+    image-set(
+      url('../images/background/background@1xRGB.webp') 1x,
+      url('../images/background/background@2xRGB.webp') 2x,
+      url('../images/background/background@3xRGB.webp') 3x,
+      url('../images/background/background@4xRGB.webp') 4x
+    ),
+    linear-gradient(
+      to right top,
+      #cb9ca244,
+      #a195bd44,
+      #ae73a344,
+      #84689744,
+      #cb9ca244,
+      #a195bd44,
+      #ae73a344,
+      #84689744
+    );
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: fadeIn 0.75s ease-in-out;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+@supports (backdrop-filter: none) {
+  #container::before {
+    background-size: 125%;
+  }
+
+  #container::after {
+    -webkit-backdrop-filter: var(--backdrop-filter);
+    backdrop-filter: var(--backdrop-filter);
+  }
+}
+
+@supports not (backdrop-filter: none) {
+  #container::before {
+    filter: var(--backdrop-filter);
+    transform: scale(1.25);
+  }
+}

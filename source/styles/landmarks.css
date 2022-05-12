@@ -1,0 +1,36 @@
+header {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideDown 0.75s ease-in-out;
+}
+
+header svg {
+  fill: currentColor;
+  width: 100%;
+  animation: fadeIn 1.25s ease-in-out 0.25s both;
+  mix-blend-mode: overlay;
+  transform: translateZ(0);
+}
+
+main {
+  padding: 2em 0;
+  border-top: var(--border);
+  animation: fadeIn 0.5s ease-in-out 1s both;
+}
+
+footer {
+  border-top: var(--border);
+  animation: fadeIn 0.5s ease-in-out 1s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #container::before,
+  header,
+  header svg,
+  main,
+  footer {
+    animation: none;
+  }
+}

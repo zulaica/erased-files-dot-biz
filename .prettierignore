@@ -1,0 +1,5 @@
+.vscode/
+build/
+*.config.js
+*.config.json
+.prettierrc.json
