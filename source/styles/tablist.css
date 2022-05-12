@@ -66,4 +66,5 @@
 
 .tablist div[class$='-panel'][aria-hidden] {
   opacity: 0;
+  pointer-events: none;
 }
