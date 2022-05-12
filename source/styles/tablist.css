@@ -9,6 +9,7 @@
 .tablist fieldset {
   border: 0;
   padding: 0;
+  margin: 1.30625em 0;
   grid-area: controls;
 }
 

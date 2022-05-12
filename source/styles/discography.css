@@ -7,6 +7,7 @@
 
 [aria-labelledby='discography'] article h3 {
   grid-column: 1;
+  margin: 1em 0;
 }
 
 [aria-labelledby='discography'] article img {
@@ -19,10 +20,6 @@
 [aria-labelledby='discography'] article .tablist {
   grid-column: 2;
   grid-row: 1 / -1;
-  margin: 1.25em 0;
-}
-[aria-labelledby='discography'] article dl {
-  margin-top: 0;
 }
 
 [aria-labelledby='discography'] article :where(dl dt, .track-listing p) {
@@ -65,4 +62,20 @@
 
 [aria-labelledby='discography'] article .songs-panel table tbody tr td {
   padding: 0.25em 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+  [aria-labelledby='discography'] article h3 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+  }
+  [aria-labelledby='discography'] article img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  [aria-labelledby='discography'] article .tablist {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
 }
