@@ -1,0 +1,45 @@
+.tablist fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.tablist fieldset legend {
+  position: absolute;
+  left: auto;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tablist .tablist-control {
+  display: inline-block;
+}
+
+.tablist .tablist-control input {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  opacity: 0;
+}
+
+.tablist .tablist-control label {
+  padding: 0.325em 1em;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.tablist .tablist-control input:checked + label {
+  background-color: #dfbfef88;
+  cursor: default;
+}
+
+.tablist div[class$="-panel"] {
+  padding: 0.25em 0;
+}
+
+.tablist div[class$="-panel"][hidden] {
+  display: none;
+}
