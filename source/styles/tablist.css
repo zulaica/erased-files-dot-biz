@@ -1,5 +1,6 @@
 .tablist {
   display: grid;
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     'controls'
     'panels';
@@ -34,10 +35,21 @@
 }
 
 .tablist .tablist-control label {
-  padding: 0.325em 1em;
+  padding: 0.5em 1em 0.3125em 1em;
+  font-family: var(--font-family-header);
+  font-size: 0.825em;
+  font-weight: 500;
+  font-variation-settings: 'wght' 550;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
   text-shadow: none;
   cursor: pointer;
   transition: background-color 0.25s ease-in;
+}
+
+.tablist .tablist-control label:hover,
+.tablist .tablist-control label:focus {
+  background-color: #dfbfef33;
 }
 
 .tablist .tablist-control input:checked + label {
