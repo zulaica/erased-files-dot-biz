@@ -1,5 +1,5 @@
-const tablist = document.querySelector(".tablist");
-const tablistControls = tablist.querySelectorAll(".tablist-control input");
+const tablist = document.querySelector('.tablist');
+const tablistControls = tablist.querySelectorAll('.tablist-control input');
 const panels = tablist.querySelectorAll('div[class$="-panel"]');
 
 const getPanel = (node) =>
@@ -10,24 +10,24 @@ const getPanel = (node) =>
 const deactivatePanel = (sibling) => {
   const panel = getPanel(sibling);
 
-  sibling.removeAttribute("checked");
-  sibling.setAttribute("aria-expanded", false);
+  sibling.removeAttribute('checked');
+  sibling.setAttribute('aria-expanded', false);
 
-  panel.setAttribute("hidden", true);
+  panel.setAttribute('hidden', true);
 };
 
 const activatePanel = (target) => {
   const panel = getPanel(target);
 
-  target.setAttribute("checked", true);
-  target.setAttribute("aria-expanded", true);
+  target.setAttribute('checked', true);
+  target.setAttribute('aria-expanded', true);
 
-  panel.removeAttribute("hidden");
+  panel.removeAttribute('hidden');
 };
 
 export const tablistSetup = () =>
   tablistControls.forEach((tablistControl) => {
-    tablistControl.addEventListener("change", (event) => {
+    tablistControl.addEventListener('change', (event) => {
       event.preventDefault();
 
       const { target } = event;

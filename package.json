@@ -16,11 +16,31 @@
   },
   "homepage": "https://github.com/zulaica/erased-files-dot-biz#readme",
   "scripts": {
-    "gh-pages": "gh-pages -d build",
-    "start": "python3 -m http.server --directory ./source/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:clean && npm run build:style && npm run build:script && npm run build:html && npm run build:assets",
+    "build:assets": "node ./lib/assets.mjs",
+    "build:clean": "rm -rf build",
+    "build:html": "posthtml source/index.html --output build/index.html",
+    "build:script": "browserify source/script.[hash].js -o build/script.[hash].js -t [ babelify ]",
+    "build:style": "postcss source/stylesheet.[hash].css --output build/stylesheet.[hash].css",
+    "dev": "python3 -m http.server --directory ./source/",
+    "gh-pages": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "autoprefixer": "^10.4.7",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "cssnano": "^5.1.7",
+    "gh-pages": "^4.0.0",
+    "htmlnano": "^2.0.2",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "postcss-preset-env": "^7.5.0",
+    "postcss-url": "^10.1.3",
+    "posthtml-cli": "^0.10.0",
+    "posthtml-hash": "^1.2.2"
   }
 }
