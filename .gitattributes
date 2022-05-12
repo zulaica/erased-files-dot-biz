@@ -1,8 +1,12 @@
 # Images
-*.jpg           binary
-*.webp          binary
+*.jpg             binary
+*.webp            binary
 
 # Fonts
-*.ttf           binary
-*.woff          binary
-*.woff2         binary
+*.ttf             binary
+*.woff            binary
+*.woff2           binary
+
+# Configuration Files
+/.vscode/*.json   linguist-language=JSON5
+.prettierrc.json  linguist-language=JSON5
