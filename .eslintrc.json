@@ -9,10 +9,12 @@
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["prettier", "jsdoc"],
+  "plugins": [
+    "prettier",
+    "jsdoc"
+  ],
   "rules": {
     // Rules options are managed by Prettier. Updates belong in Prettier's
     // configuration file: .prettierrc.json
