@@ -41,7 +41,6 @@
   font-variation-settings: 'wght' 550;
   letter-spacing: 0.125em;
   text-transform: uppercase;
-  text-shadow: none;
   cursor: pointer;
   transition: background-color 0.25s ease-in;
 }
@@ -53,6 +52,7 @@
 
 .tablist .tablist-control input:checked + label {
   background-color: #dfbfef88;
+  text-shadow: none;
   cursor: default;
 }
 
