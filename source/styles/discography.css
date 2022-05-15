@@ -39,7 +39,11 @@
   margin: 0;
 }
 
-[aria-labelledby='discography'] article .overview-panel dl {
+[aria-labelledby='discography'] article dl {
+  margin-top: 1.75em;
+}
+
+[aria-labelledby='discography'] article table {
   margin-top: 1.5em;
 }
 
