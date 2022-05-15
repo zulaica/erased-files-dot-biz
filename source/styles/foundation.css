@@ -66,13 +66,17 @@ a {
   font-family: 'Amelia Oblicua', sans-serif;
   color: #fff;
   text-decoration: underline;
-  text-decoration-color: #6c5095;
+  text-decoration-color: var(--color-primary-02);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.125em;
   transition: text-underline-offset 0.125s ease-in, text-decoration-color 0.125s ease-in;
 }
 
+footer a {
+  text-decoration-color: var(--color-primary-01);
+}
+
 a:hover {
+  text-decoration-color: var(--color-primary-01);
   text-underline-offset: 0.325em;
-  text-decoration-color: #846897;
 }
