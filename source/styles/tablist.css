@@ -16,13 +16,11 @@
 
 .tablist fieldset legend {
   position: absolute;
-  left: auto;
-  top: auto;
+  overflow: hidden;
   width: 1px;
   height: 1px;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .tablist .tablist-control input {
