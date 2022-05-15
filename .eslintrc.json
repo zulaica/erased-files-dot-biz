@@ -12,8 +12,7 @@
     "sourceType": "module"
   },
   "plugins": [
-    "prettier",
-    "jsdoc"
+    "prettier"
   ],
   "rules": {
     // Rules options are managed by Prettier. Updates belong in Prettier's
