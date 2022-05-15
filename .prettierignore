@@ -1,5 +1,7 @@
+.github/
 .vscode/
 build/
 *.config.js
 *.config.json
 .prettierrc.json
+package-lock.json
