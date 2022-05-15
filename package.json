@@ -34,9 +34,6 @@
     "lint:css": "npx stylelint ./source/**/*.css --color --cache",
     "lint:html": "npx htmlhint ./source/**/*.html",
     "lint:js": "npx eslint source/**/*.js lib/**/*.mjs --color --cache",
-    "lint:fix": "npm run lint:fix:css && npm run lint:fix:js",
-    "lint:fix:css": "npm run lint:css --fix",
-    "lint:fix:js": "npm run lint:js --fix",
     "stage": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
