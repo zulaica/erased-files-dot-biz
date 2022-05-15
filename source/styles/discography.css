@@ -33,11 +33,6 @@
   font-size: 0.825em;
 }
 
-[aria-labelledby='discography'] article .songs-panel ol {
-  padding: 0;
-  list-style-position: inside;
-}
-
 [aria-labelledby='discography'] article .songs-panel table {
   width: 100%;
   border-collapse: collapse;
