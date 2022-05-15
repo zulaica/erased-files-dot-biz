@@ -51,12 +51,7 @@
   border-bottom: var(--border);
 }
 
-[aria-labelledby='discography']
-  article
-  .songs-panel
-  table
-  tbody
-  tr:last-of-type {
+[aria-labelledby='discography'] article .songs-panel table tbody tr:last-of-type {
   border-bottom: 0;
 }
 
@@ -70,10 +65,12 @@
     grid-row: 1;
     align-self: center;
   }
+
   [aria-labelledby='discography'] article img {
     grid-column: 1;
     grid-row: 1;
   }
+
   [aria-labelledby='discography'] article .tablist {
     grid-column: 1 / -1;
     grid-row: 2;

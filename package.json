@@ -15,6 +15,13 @@
     "url": "https://github.com/zulaica/erased-files-dot-biz/issues"
   },
   "homepage": "https://github.com/zulaica/erased-files-dot-biz#readme",
+  "@comment scripts": {
+    "lint": [
+      "Linters exit with a non-zero code when warnings or errors are found.",
+      "In order to run both linters sequentially, `|| true` is used to coerce",
+      "an exit code of `0` to let the next command run."
+    ]
+  },
   "scripts": {
     "build": "npm run build:clean && npm run build:style && npm run build:script && npm run build:html && npm run build:assets",
     "build:assets": "node ./lib/assets.mjs",
@@ -23,9 +30,12 @@
     "build:script": "browserify source/script.[hash].js -o build/script.[hash].js -t [ babelify ]",
     "build:style": "postcss source/stylesheet.[hash].css -o build/stylesheet.[hash].css",
     "dev": "python3 -m http.server -d ./source/",
-    "lint": "npm run lint:js",
+    "lint": "npm run lint:js || true && npm run lint:css",
+    "lint:css": "npx stylelint ./source/**/*.css",
     "lint:js": "npx eslint . --color --cache",
-    "lint:format:js": "npm run lint:js --fix",
+    "lint:fix": "npm run lint:fix:css && npm run lint:fix:js",
+    "lint:fix:css": "npm run lint:css --fix",
+    "lint:fix:js": "npm run lint:js --fix",
     "stage": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
@@ -49,6 +59,9 @@
     "postcss-url": "^10.1.3",
     "posthtml-cli": "^0.10.0",
     "posthtml-hash": "^1.2.2",
-    "prettier": "^2.5.0"
+    "prettier": "^2.5.0",
+    "stylelint": "^14.8.2",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0"
   }
 }

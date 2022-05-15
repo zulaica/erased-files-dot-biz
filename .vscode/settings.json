@@ -1,6 +1,5 @@
 {
-  "css.format.spaceAroundSelectorSeparator": true,
-  "css.lint.hexColorLength": "ignore",
+  "css.validate": false,
   "editor.formatOnSave": true,
   "eslint.run": "onSave",
   "files.exclude": {
@@ -14,7 +13,7 @@
     "**/build": true
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
