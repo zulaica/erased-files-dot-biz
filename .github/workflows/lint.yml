@@ -15,6 +15,6 @@ jobs:
         with:
           node-version-file: '.nvmrc'
       - name: Install linters
-        run: npm install prettier eslint eslint-config-prettier eslint-plugin-prettier stylelint stylelint-config-prettier stylelint-config-standard
+        run: npm install prettier eslint eslint-config-prettier eslint-plugin-prettier stylelint stylelint-config-prettier stylelint-config-standard htmlhint
       - name: Lint JavaScript and CSS files
         run: npm run lint
