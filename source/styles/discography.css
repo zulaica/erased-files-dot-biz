@@ -39,14 +39,26 @@
   margin-top: 1.75em;
 }
 
-[aria-labelledby='discography'] article .listen-panel dl {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
-
 [aria-labelledby='discography'] article dd {
   margin: 0;
+}
+
+[aria-labelledby='discography'] article .listen-panel dl {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+[aria-labelledby='discography'] article .listen-panel dd {
+  flex: 1 0 30%;
+  max-width: 30%;
+}
+
+[aria-labelledby='discography'] article .listen-panel dd a {
+  white-space: nowrap;
+  font-family: var(--font-family-body);
+  display: block;
+  text-align: center;
 }
 
 [aria-labelledby='discography'] article table {
