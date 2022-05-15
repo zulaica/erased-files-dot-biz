@@ -2,25 +2,25 @@ const tablist = document.querySelector('.tablist');
 const tablistControls = tablist.querySelectorAll('.tablist-control input');
 const panels = tablist.querySelectorAll('div[class$="-panel"]');
 
-const getPanel = (node) =>
+const getPanel = (tablistControlElement) =>
   [...panels].find((panel) =>
-    [...panel.classList].includes(`${node.id}-panel`)
+    [...panel.classList].includes(`${tablistControlElement.id}-panel`)
   );
 
-const deactivatePanel = (sibling) => {
-  const panel = getPanel(sibling);
+const deactivatePanel = (tablistControlElement) => {
+  const panel = getPanel(tablistControlElement);
 
-  sibling.removeAttribute('checked');
-  sibling.setAttribute('aria-expanded', false);
+  tablistControlElement.removeAttribute('checked');
+  tablistControlElement.setAttribute('aria-expanded', false);
 
   panel.setAttribute('aria-hidden', true);
 };
 
-const activatePanel = (target) => {
-  const panel = getPanel(target);
+const activatePanel = (tablistControlElement) => {
+  const panel = getPanel(tablistControlElement);
 
-  target.setAttribute('checked', true);
-  target.setAttribute('aria-expanded', true);
+  tablistControlElement.setAttribute('checked', true);
+  tablistControlElement.setAttribute('aria-expanded', true);
 
   panel.removeAttribute('aria-hidden');
 };
