@@ -28,9 +28,22 @@
   margin: 0;
 }
 
-[aria-labelledby='discography'] article :where(dl dd, .songs-panel table) {
-  margin: 0;
+[aria-labelledby='discography'] article div[class$='-panel'] {
   font-size: 0.825em;
+}
+
+[aria-labelledby='discography'] article dl dd {
+  margin: 0;
+}
+
+[aria-labelledby='discography'] article .overview-panel dl {
+  margin-top: 1.5em;
+}
+
+[aria-labelledby='discography'] article .listen-panel dl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 [aria-labelledby='discography'] article .songs-panel table {
