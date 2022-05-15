@@ -60,7 +60,7 @@
   grid-area: panels;
   opacity: 1;
   transition: opacity 0.25s ease-in;
-  border-top: 2px solid #6c5095;
+  border-top: var(--border);
 }
 
 .tablist div[class$='-panel'][aria-hidden] {
