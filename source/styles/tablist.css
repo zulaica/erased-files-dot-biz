@@ -11,6 +11,7 @@
   padding: 0;
   margin: 1.3062em 0;
   grid-area: controls;
+  display: flex;
 }
 
 .tablist fieldset legend {
@@ -22,10 +23,6 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-.tablist .tablist-control {
-  display: inline-block;
 }
 
 .tablist .tablist-control input {
