@@ -1,10 +1,11 @@
 {
-  "css.format.spaceAroundSelectorSeparator": true,
-  "css.lint.hexColorLength": "ignore",
+  "css.validate": false,
   "editor.formatOnSave": true,
   "eslint.run": "onSave",
   "files.exclude": {
     "**/.git": true,
+    "**/.eslintcache": true,
+    "**/.stylelintcache": true,
     "**/node_modules": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true
@@ -13,7 +14,7 @@
     "**/build": true
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -23,5 +24,8 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   }
 }

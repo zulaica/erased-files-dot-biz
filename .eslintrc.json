@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    // Rules options are managed by Prettier. Updates belong in Prettier's
+    // configuration file: .prettierrc.json
+  }
+}

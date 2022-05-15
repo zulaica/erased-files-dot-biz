@@ -1,0 +1,20 @@
+name: Lint
+
+on: pull_request
+
+jobs:
+  lint_code_base:
+    name: Lint Code Base
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+      - name: Install linters
+        run: npm install prettier eslint eslint-config-prettier eslint-plugin-prettier stylelint stylelint-config-prettier stylelint-config-standard htmlhint
+      - name: Lint JavaScript and CSS files
+        run: npm run lint

@@ -1,5 +1,13 @@
 # OS-generated files
 .DS_Store
 Thumbs.db
-node_modules
-build
+
+# Dependencies
+node_modules/
+
+# Build Artifacts
+build/
+
+# Caches and Logs
+.eslintcache
+.stylelintcache
