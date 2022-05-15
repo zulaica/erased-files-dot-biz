@@ -56,14 +56,14 @@
   cursor: default;
 }
 
-.tablist div[class$='-panel'] {
+.tablist [class$='-panel'] {
   grid-area: panels;
   opacity: 1;
   transition: opacity 0.25s ease-in;
   border-top: var(--border);
 }
 
-.tablist div[class$='-panel'][aria-hidden] {
+.tablist [class$='-panel'][aria-hidden] {
   opacity: 0;
   pointer-events: none;
 }

@@ -22,17 +22,17 @@
   grid-row: 1 / -1;
 }
 
-[aria-labelledby='discography'] article :where(dl dt, p, table thead) {
+[aria-labelledby='discography'] article [class$='-panel'] {
+  font-size: 0.825em;
+}
+
+[aria-labelledby='discography'] article :where(dt, p, thead) {
   position: absolute;
   overflow: hidden;
   width: 1px;
   height: 1px;
   margin: 0;
   padding: 0;
-}
-
-[aria-labelledby='discography'] article div[class$='-panel'] {
-  font-size: 0.825em;
 }
 
 [aria-labelledby='discography'] article dl {
@@ -51,22 +51,19 @@
 
 [aria-labelledby='discography'] article table {
   margin-top: 1.5em;
-}
-
-[aria-labelledby='discography'] article .songs-panel table {
   width: 100%;
   border-collapse: collapse;
 }
 
-[aria-labelledby='discography'] article .songs-panel table tbody tr {
+[aria-labelledby='discography'] article tbody tr {
   border-bottom: var(--border);
 }
 
-[aria-labelledby='discography'] article .songs-panel table tbody tr:last-of-type {
+[aria-labelledby='discography'] article tbody tr:last-of-type {
   border-bottom: 0;
 }
 
-[aria-labelledby='discography'] article .songs-panel table tbody tr td {
+[aria-labelledby='discography'] article tbody tr td {
   padding: 0.25em 0.5em;
 }
 
