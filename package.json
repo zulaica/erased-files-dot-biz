@@ -23,9 +23,9 @@
     "build:script": "browserify source/script.[hash].js -o build/script.[hash].js -t [ babelify ]",
     "build:style": "postcss source/stylesheet.[hash].css -o build/stylesheet.[hash].css",
     "dev": "python3 -m http.server -d ./source/",
-    "lint": "npm run lint:check",
-    "lint:check": "npx prettier --check .",
-    "lint:fix": "npx prettier --write .",
+    "lint": "npm run lint:js",
+    "lint:js": "npx eslint . --color --cache",
+    "lint:format:js": "npm run lint:js --fix",
     "stage": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
@@ -36,6 +36,10 @@
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",
     "cssnano": "^5.1.7",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsdoc": "^37.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "gh-pages": "^4.0.0",
     "htmlnano": "^2.0.2",
     "postcss": "^8.4.13",

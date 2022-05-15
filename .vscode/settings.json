@@ -2,8 +2,10 @@
   "css.format.spaceAroundSelectorSeparator": true,
   "css.lint.hexColorLength": "ignore",
   "editor.formatOnSave": true,
+  "eslint.run": "onSave",
   "files.exclude": {
     "**/.git": true,
+    "**/.eslintcache": true,
     "**/node_modules": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true
@@ -18,9 +20,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   }
 }
