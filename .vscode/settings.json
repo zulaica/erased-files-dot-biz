@@ -2,7 +2,6 @@
   "css.format.spaceAroundSelectorSeparator": true,
   "css.lint.hexColorLength": "ignore",
   "editor.formatOnSave": true,
-  "eslint.run": "onSave",
   "files.exclude": {
     "**/.git": true,
     "**/node_modules": true,
