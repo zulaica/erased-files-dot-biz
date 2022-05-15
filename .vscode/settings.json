@@ -4,6 +4,8 @@
   "eslint.run": "onSave",
   "files.exclude": {
     "**/.git": true,
+    "**/.eslintcache": true,
+    "**/.stylelintcache": true,
     "**/node_modules": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true
