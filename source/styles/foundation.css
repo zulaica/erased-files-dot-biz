@@ -64,14 +64,22 @@ footer p {
 
 a {
   font-family: 'Amelia Oblicua', sans-serif;
+  font-weight: 500;
+  font-variation-settings: 'wght' 550;
   color: #fff;
   text-decoration: underline;
-  text-decoration-color: #6c5095;
+  text-decoration-color: var(--color-primary-04);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.125em;
-  transition: text-underline-offset 0.325s ease-in;
+  transition: text-underline-offset 0.125s ease-in, text-decoration-color 0.125s ease-in;
+}
+
+footer a {
+  text-decoration-color: var(--color-primary-01);
 }
 
 a:hover {
+  text-decoration-color: var(--color-primary-01);
+  text-decoration-thickness: 3px;
   text-underline-offset: 0.325em;
 }

@@ -8,68 +8,20 @@
 }
 
 #container::before {
-  background-image: linear-gradient(
-    to right top,
-    #cb9ca233,
-    #a195bd33,
-    #ae73a333,
-    #84689733
-  ),
+  background-image: var(--gradient-layer-bottom),
     url('../images/background/background@2xRGB.jpg'),
-    linear-gradient(
-    to right top,
-    #cb9ca244,
-    #a195bd44,
-    #ae73a344,
-    #84689744,
-    #cb9ca244,
-    #a195bd44,
-    #ae73a344,
-    #84689744
-  );
-  background-image: linear-gradient(
-    to right top,
-    #cb9ca233,
-    #a195bd33,
-    #ae73a333,
-    #84689733
-  ),
+    var(--gradient-layer-top);
+  background-image: var(--gradient-layer-bottom),
     url('../images/background/background@2xRGB.webp'),
-    linear-gradient(
-    to right top,
-    #cb9ca244,
-    #a195bd44,
-    #ae73a344,
-    #84689744,
-    #cb9ca244,
-    #a195bd44,
-    #ae73a344,
-    #84689744
-  );
-  background-image: linear-gradient(
-    to right top,
-    #cb9ca233,
-    #a195bd33,
-    #ae73a333,
-    #84689733
-  ),
+    var(--gradient-layer-top);
+  background-image: var(--gradient-layer-bottom),
     image-set(
-    url('../images/background/background@1xRGB.webp') 1dppx,
-    url('../images/background/background@2xRGB.webp') 2dppx,
-    url('../images/background/background@3xRGB.webp') 3dppx,
-    url('../images/background/background@4xRGB.webp') 4dppx
-  ),
-    linear-gradient(
-    to right top,
-    #cb9ca244,
-    #a195bd44,
-    #ae73a344,
-    #84689744,
-    #cb9ca244,
-    #a195bd44,
-    #ae73a344,
-    #84689744
-  );
+      url('../images/background/background@1xRGB.webp') 1dppx,
+      url('../images/background/background@2xRGB.webp') 2dppx,
+      url('../images/background/background@3xRGB.webp') 3dppx,
+      url('../images/background/background@4xRGB.webp') 4dppx
+    ),
+    var(--gradient-layer-top);
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;

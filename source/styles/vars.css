@@ -1,10 +1,53 @@
 :root {
-  --backdrop-filter: blur(100px);
+  /**
+   * Colors
+   */
+  --color-primary-01: #6c5095;
+  --color-primary-02: #846897;
+  --color-primary-03: #a195bd;
+  --color-primary-04: #dfbfef;
+  --color-secondary-01: #ae73a3;
+  --color-secondary-02: #cb9cc2;
+
+  /**
+   * Typography
+   */
   --font-family-header: 'League Spartan Variable', 'League Spartan', sans-serif;
   --font-family-body: 'Amelia', sans-serif;
   --font-size-base: 22px;
   --font-line-height-base: 1.5;
+
+  /**
+   * Layout
+   */
   --max-width: 1280px;
+
+  /**
+   * Background
+   */
+  --backdrop-filter: blur(100px);
+  --gradient-layer-bottom: linear-gradient(
+    to right top,
+    #cb9cc233,
+    #a195bd33,
+    #ae73a333,
+    #84689733
+  );
+  --gradient-layer-top: linear-gradient(
+    to right top,
+    #cb9cc244,
+    #a195bd44,
+    #ae73a344,
+    #84689744,
+    #cb9cc244,
+    #a195bd44,
+    #ae73a344,
+    #84689744
+  );
+
+  /**
+   * Miscellaneous
+   */
   --border: 1px solid #dfbfef88;
 }
 
