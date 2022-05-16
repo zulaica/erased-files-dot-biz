@@ -11,27 +11,23 @@
   padding: 0;
   margin: 1.3062em 0;
   grid-area: controls;
+  display: flex;
 }
 
 .tablist fieldset legend {
   position: absolute;
-  left: auto;
-  top: auto;
+  overflow: hidden;
   width: 1px;
   height: 1px;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-}
-
-.tablist .tablist-control {
-  display: inline-block;
 }
 
 .tablist .tablist-control input {
   position: absolute;
   width: 1em;
   height: 1em;
+  margin: 0;
   opacity: 0;
 }
 
@@ -43,7 +39,6 @@
   font-variation-settings: 'wght' 550;
   letter-spacing: 0.125em;
   text-transform: uppercase;
-  text-shadow: none;
   cursor: pointer;
   transition: background-color 0.25s ease-in;
 }
@@ -55,16 +50,18 @@
 
 .tablist .tablist-control input:checked + label {
   background-color: #dfbfef88;
+  text-shadow: none;
   cursor: default;
 }
 
-.tablist div[class$='-panel'] {
+.tablist [class$='-panel'] {
   grid-area: panels;
   opacity: 1;
   transition: opacity 0.25s ease-in;
+  border-top: var(--border);
 }
 
-.tablist div[class$='-panel'][aria-hidden] {
+.tablist [class$='-panel'][aria-hidden] {
   opacity: 0;
   pointer-events: none;
 }
