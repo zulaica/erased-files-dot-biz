@@ -25,7 +25,7 @@
   "scripts": {
     "build": "npm run build:clean && npm run build:style && npm run build:script && npm run build:html && npm run build:images",
     "build:images": "node ./lib/copyFiles.mjs ./source/images ./build/images",
-    "build:clean": "rm -rf build",
+    "build:clean": "node ./lib/removeDirectory.mjs ./build",
     "build:html": "posthtml source/index.html -o build/index.html",
     "build:script": "browserify source/script.hash.js -o build/script.hash.js -t [ babelify ]",
     "build:style": "postcss source/stylesheet.hash.css -o build/stylesheet.hash.css",
