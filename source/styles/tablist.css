@@ -2,8 +2,8 @@
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-areas:
-    'controls'
-    'panels';
+    "controls"
+    "panels";
 }
 
 .tablist fieldset {
@@ -36,7 +36,7 @@
   font-family: var(--font-family-header);
   font-size: 0.825em;
   font-weight: 500;
-  font-variation-settings: 'wght' 550;
+  font-variation-settings: "wght" 550;
   letter-spacing: 0.125em;
   text-transform: uppercase;
   cursor: pointer;
@@ -54,14 +54,14 @@
   cursor: default;
 }
 
-.tablist [class$='-panel'] {
+.tablist [class$="-panel"] {
   grid-area: panels;
   opacity: 1;
   transition: opacity 0.25s ease-in;
   border-top: var(--border);
 }
 
-.tablist [class$='-panel'][aria-hidden] {
+.tablist [class$="-panel"][aria-hidden] {
   opacity: 0;
   pointer-events: none;
 }

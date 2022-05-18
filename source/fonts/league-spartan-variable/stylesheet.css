@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'League Spartan Variable';
-  src: url('LeagueSpartanVariable.woff2') format('woff2 supports variations'),
-    url('LeagueSpartanVariable.woff2') format('woff2-variations'),
-    url('LeagueSpartanVariable.woff') format('woff-variations'),
-    url('LeagueSpartanVariable.ttf') format('truetype-variations');
+  font-family: "League Spartan Variable";
+  src: url("LeagueSpartanVariable.woff2") format("woff2 supports variations"),
+    url("LeagueSpartanVariable.woff2") format("woff2-variations"),
+    url("LeagueSpartanVariable.woff") format("woff-variations"),
+    url("LeagueSpartanVariable.ttf") format("truetype-variations");
   font-style: normal;
   font-weight: 200 900;
   font-display: swap;

@@ -36,7 +36,7 @@ section > h2 {
   font-family: var(--font-family-header);
   font-size: 1.3125rem;
   font-weight: 800;
-  font-variation-settings: 'wght' 850;
+  font-variation-settings: "wght" 850;
   letter-spacing: 0.325em;
   text-transform: uppercase;
 }
@@ -57,21 +57,22 @@ footer p {
   font-family: var(--font-family-header);
   font-size: 0.625em;
   font-weight: 300;
-  font-variation-settings: 'wght' 350;
+  font-variation-settings: "wght" 350;
   letter-spacing: 0.125em;
   text-transform: uppercase;
 }
 
 a {
-  font-family: 'Amelia Oblicua', sans-serif;
+  font-family: "Amelia Oblicua", sans-serif;
   font-weight: 500;
-  font-variation-settings: 'wght' 550;
+  font-variation-settings: "wght" 550;
   color: #fff;
   text-decoration: underline;
   text-decoration-color: var(--color-primary-04);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.125em;
-  transition: text-underline-offset 0.125s ease-in, text-decoration-color 0.125s ease-in;
+  transition: text-underline-offset 0.125s ease-in,
+    text-decoration-color 0.125s ease-in;
 }
 
 footer a {
