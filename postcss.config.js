@@ -28,6 +28,7 @@ module.exports = {
       preset: [
         "advanced",
         {
+          minifyFontValues: false,
           normalizeUrl: false
         }
       ]
