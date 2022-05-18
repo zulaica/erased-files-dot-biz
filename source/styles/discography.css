@@ -50,8 +50,8 @@
 }
 
 [aria-labelledby='discography'] article .listen-panel dd {
-  flex: 1 0 30%;
-  max-width: 30%;
+  flex: 1 0 calc(33% - 1em);
+  max-width: calc(33% - 1em);
 }
 
 [aria-labelledby='discography'] article .listen-panel dd a {
@@ -94,5 +94,10 @@
   [aria-labelledby='discography'] article .tablist {
     grid-column: 1 / -1;
     grid-row: 2;
+  }
+
+  [aria-labelledby='discography'] article .listen-panel dd {
+    flex: 1 0 calc(50% - 1em);
+    max-width: calc(50% - 1em);
   }
 }
