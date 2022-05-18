@@ -1,32 +1,32 @@
-[aria-labelledby="discography"] article {
+[aria-labelledby='discography'] article {
   display: grid;
   column-gap: 1.5em;
   grid-template-columns: 34% 1fr;
   grid-template-rows: auto 1fr;
 }
 
-[aria-labelledby="discography"] article h3 {
+[aria-labelledby='discography'] article h3 {
   grid-column: 1;
   margin: 1em 0;
 }
 
-[aria-labelledby="discography"] article img {
+[aria-labelledby='discography'] article img {
   grid-column: 1;
   border: var(--border);
   width: 100%;
   height: auto;
 }
 
-[aria-labelledby="discography"] article .tablist {
+[aria-labelledby='discography'] article .tablist {
   grid-column: 2;
   grid-row: 1 / -1;
 }
 
-[aria-labelledby="discography"] article [class$="-panel"] {
+[aria-labelledby='discography'] article [class$='-panel'] {
   font-size: 0.825em;
 }
 
-[aria-labelledby="discography"] article :where(dt, p, thead) {
+[aria-labelledby='discography'] article :where(dt, p, thead) {
   position: absolute;
   overflow: hidden;
   width: 1px;
@@ -35,68 +35,68 @@
   padding: 0;
 }
 
-[aria-labelledby="discography"] article dl {
+[aria-labelledby='discography'] article dl {
   margin-top: 1.75em;
 }
 
-[aria-labelledby="discography"] article dd {
+[aria-labelledby='discography'] article dd {
   margin: 0;
 }
 
-[aria-labelledby="discography"] article .listen-panel dl {
+[aria-labelledby='discography'] article .listen-panel dl {
   display: flex;
   flex-flow: row wrap;
   gap: 1em;
 }
 
-[aria-labelledby="discography"] article .listen-panel dd {
+[aria-labelledby='discography'] article .listen-panel dd {
   flex: 1 0 calc(33% - 1em);
   max-width: calc(33% - 1em);
 }
 
-[aria-labelledby="discography"] article .listen-panel dd a {
+[aria-labelledby='discography'] article .listen-panel dd a {
   white-space: nowrap;
   font-family: var(--font-family-body);
   display: block;
   text-align: center;
 }
 
-[aria-labelledby="discography"] article table {
+[aria-labelledby='discography'] article table {
   margin-top: 1.5em;
   width: 100%;
   border-collapse: collapse;
 }
 
-[aria-labelledby="discography"] article tbody tr {
+[aria-labelledby='discography'] article tbody tr {
   border-bottom: var(--border);
 }
 
-[aria-labelledby="discography"] article tbody tr:last-of-type {
+[aria-labelledby='discography'] article tbody tr:last-of-type {
   border-bottom: 0;
 }
 
-[aria-labelledby="discography"] article tbody tr td {
+[aria-labelledby='discography'] article tbody tr td {
   padding: 0.25em 0.5em;
 }
 
 @media screen and (max-width: 767px) {
-  [aria-labelledby="discography"] article h3 {
+  [aria-labelledby='discography'] article h3 {
     grid-column: 2;
     grid-row: 1;
     align-self: center;
   }
 
-  [aria-labelledby="discography"] article img {
+  [aria-labelledby='discography'] article img {
     grid-column: 1;
     grid-row: 1;
   }
 
-  [aria-labelledby="discography"] article .tablist {
+  [aria-labelledby='discography'] article .tablist {
     grid-column: 1 / -1;
     grid-row: 2;
   }
 
-  [aria-labelledby="discography"] article .listen-panel dd {
+  [aria-labelledby='discography'] article .listen-panel dd {
     flex: 1 0 calc(50% - 1em);
     max-width: calc(50% - 1em);
   }

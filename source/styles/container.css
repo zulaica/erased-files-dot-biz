@@ -1,6 +1,6 @@
 #container::before,
 #container::after {
-  content: "";
+  content: '';
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -9,15 +9,15 @@
 
 #container::before {
   background-image: var(--gradient-layer-bottom),
-    url("../images/background/background@2xRGB.jpg"), var(--gradient-layer-top);
+    url('../images/background/background@2xRGB.jpg'), var(--gradient-layer-top);
   background-image: var(--gradient-layer-bottom),
-    url("../images/background/background@2xRGB.webp"), var(--gradient-layer-top);
+    url('../images/background/background@2xRGB.webp'), var(--gradient-layer-top);
   background-image: var(--gradient-layer-bottom),
     image-set(
-      url("../images/background/background@1xRGB.webp") 1dppx,
-      url("../images/background/background@2xRGB.webp") 2dppx,
-      url("../images/background/background@3xRGB.webp") 3dppx,
-      url("../images/background/background@4xRGB.webp") 4dppx
+      url('../images/background/background@1xRGB.webp') 1dppx,
+      url('../images/background/background@2xRGB.webp') 2dppx,
+      url('../images/background/background@3xRGB.webp') 3dppx,
+      url('../images/background/background@4xRGB.webp') 4dppx
     ),
     var(--gradient-layer-top);
   background-blend-mode: overlay;

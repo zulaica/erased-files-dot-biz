@@ -29,7 +29,10 @@ module.exports = {
         "advanced",
         {
           minifyFontValues: false,
-          normalizeUrl: false
+          normalizeUrl: false,
+          normalizeString: {
+            preferredQuote: 'single'
+          }
         }
       ]
     },
