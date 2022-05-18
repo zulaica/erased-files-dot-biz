@@ -1,6 +1,9 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
     "rules": {
-      "indentation": 2
+      "font-family-name-quotes":"always-unless-keyword",
+      "function-url-quotes": "always",
+      "indentation": 2,
+      "string-quotes": "double"
     }
 }
