@@ -31,9 +31,9 @@
     "build:style": "postcss source/stylesheet.hash.css -o build/stylesheet.hash.css",
     "dev": "python3 -m http.server -d ./source/",
     "lint": "npm run lint:js || true && npm run lint:css || true && npm run lint:html",
-    "lint:css": "npx stylelint \"source/**/*.css\" --color --cache",
+    "lint:css": "npx stylelint \"source/**/*.css\" --color -f verbose",
     "lint:html": "npx htmlhint ./source/**/*.html",
-    "lint:js": "npx eslint source/**/*.js lib/**/*.mjs --color --cache",
+    "lint:js": "npx eslint source/**/*.js lib/**/*.mjs --color",
     "stage": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
