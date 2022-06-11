@@ -31,6 +31,6 @@ module.exports = {
       "removeUnusedCss": false,
       "sortAttributes": false,
     },
-    "posthtml-hash": { path: "build" },
+    "posthtml-hash": { path: "build", pattern: new RegExp(/hash/) },
   },
 };

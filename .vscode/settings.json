@@ -4,17 +4,17 @@
   "eslint.run": "onSave",
   "files.exclude": {
     "**/.git": true,
-    "**/.eslintcache": true,
-    "**/.stylelintcache": true,
     "**/node_modules": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
+  "linthtml.enable": true,
+  "linthtml.packageManager": "npm",
   "search.exclude": {
     "**/build": true
   },
   "[css]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

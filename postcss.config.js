@@ -1,6 +1,7 @@
 module.exports = {
   "plugins": {
     "postcss-import": {},
+    "postcss-preset-env": {},
     "postcss-url": [
       {
         "filter": "**/*.woff2",
@@ -15,16 +16,25 @@ module.exports = {
         "url": "copy"
       },
       {
-        "filter": "**/*RGB.webp",
+        "filter": "**/*.webp",
         "url": (asset) => asset.relativePath,
       },
       {
-        "filter": "**/*RGB.jpg",
+        "filter": "**/*.jpg",
         "url": (asset) => asset.relativePath,
       },
     ],
-    "postcss-preset-env": {},
-    "autoprefixer": {},
-    "cssnano": { preset: "default" },
+    "cssnano": {
+      preset: [
+        "advanced",
+        {
+          minifyFontValues: false,
+          normalizeUrl: false,
+          normalizeString: {
+            preferredQuote: 'single'
+          }
+        }
+      ]
+    },
   },
 };

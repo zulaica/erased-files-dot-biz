@@ -71,7 +71,8 @@ a {
   text-decoration-color: var(--color-primary-04);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.125em;
-  transition: text-underline-offset 0.125s ease-in, text-decoration-color 0.125s ease-in;
+  transition: text-underline-offset 0.125s ease-in,
+    text-decoration-color 0.125s ease-in;
 }
 
 footer a {
