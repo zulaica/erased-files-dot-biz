@@ -31,9 +31,9 @@
     "build:style": "postcss source/stylesheet.hash.css -o build/stylesheet.hash.css",
     "dev": "python3 -m http.server -d ./source/",
     "lint": "npm run lint:js || true && npm run lint:css || true && npm run lint:html",
-    "lint:css": "npx stylelint \"source/**/*.css\" --color --custom-formatter ./lib/formatters/stylelint.js",
-    "lint:html": "npx linthtml \"source/**/*.html\"",
-    "lint:js": "npx eslint --format ./lib/formatters/eslint.js \"source/**/*.js\" \"lib/**/*.*js\" --color",
+    "lint:css": "stylelint \"source/**/*.css\" --color --custom-formatter ./lib/formatters/stylelint.js",
+    "lint:html": "linthtml \"source/**/*.html\"",
+    "lint:js": "eslint --format ./lib/formatters/eslint.js \"source/**/*.js\" \"lib/**/*.*js\" --color",
     "stage": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
