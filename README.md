@@ -15,8 +15,8 @@ https://www.erasedfiles.biz
 
 ### Recommended
 
-- [NVM](https://github.com/nvm-sh/nvm) - Simplifies management of muliple
-  versions of Node.js. This repo is configured to automatically load the
+- [Volta](https://volta.sh) - JavaScript tool manager used to simplify managing
+  muliple versions of Node.js. This repo is configured to automatically load the
   required version.
 - [Visual Studio Code](https://code.visualstudio.com) - A free source-code
   editor distributed by Microsoft. This repo is configured to automate workspace
@@ -35,3 +35,5 @@ https://www.erasedfiles.biz
   - A series of scripts that processes and bundles the site into the `/build` directory suitable for deploying to production
 - `npm run stage`
   - Builds the site from the current branch and deploys to Github Pages (which is used as a staging server).
+- `npm run lint`
+  - A series of scripts that lint the source code.
