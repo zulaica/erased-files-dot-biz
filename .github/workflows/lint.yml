@@ -13,7 +13,7 @@ jobs:
       - name: Install Node.js
         uses: volta-cli/action@v1
       - name: Install linters
-        run: npm install prettier eslint eslint-config-prettier eslint-plugin-prettier stylelint stylelint-config-prettier stylelint-config-standard htmlhint
+        run: npm install prettier eslint eslint-config-prettier eslint-plugin-prettier stylelint stylelint-config-prettier stylelint-config-standard @linthtml/linthtml
       - name: Lint JavaScript files
         run: npm run lint:js
       - name: Lint CSS files
