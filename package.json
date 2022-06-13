@@ -33,7 +33,7 @@
     "dev": "python3 -m http.server -d ./source/",
     "lint": "npm run lint:js || true && npm run lint:css || true && npm run lint:html",
     "lint:css": "stylelint \"source/**/*.css\" --custom-formatter ./lib/formatters/stylelint.js",
-    "lint:html": "htmlhint \"source/**/*.html\"",
+    "lint:html": "htmlhint \"source/**/*.html\" --ignore ./.htmlhintignore",
     "lint:js": "eslint \"source/**/*.js\" \"lib/**/*.*js\" --format ./lib/formatters/eslint.js",
     "stage": "npm run build && gh-pages -d build"
   },
