@@ -6,5 +6,4 @@ build/
 .eslintrc.json
 .prettierrc.json
 .stylelintrc.json
-.linthtmlrc.json
 package-lock.json
