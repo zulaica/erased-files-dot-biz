@@ -8,8 +8,7 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
-  "linthtml.enable": true,
-  "linthtml.packageManager": "npm",
+  "htmlhint.enable": true,
   "search.exclude": {
     "**/build": true
   },
