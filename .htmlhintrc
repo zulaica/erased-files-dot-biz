@@ -6,7 +6,7 @@
   "doctype-first": true,
   "doctype-html5": true,
   "id-unique": true,
-  "space-tab-mixed-disabled": "space",
+  "space-tab-mixed-disabled": "space2",
   "spec-char-escape": true,
   "src-not-empty": true,
   "tag-pair": true,
