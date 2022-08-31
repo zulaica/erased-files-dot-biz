@@ -8,9 +8,8 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
-  "htmlhint.enable": true,
   "search.exclude": {
-    "**/build": true
+    "**/release": true
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

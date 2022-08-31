@@ -11,7 +11,7 @@ https://www.erasedfiles.biz
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - Source
   code management
   - macOS users can install and manage `git` with [Homebrew](https://brew.sh)
-- [Node.js](https://nodejs.org/) (Version 16 LTS)
+- [Node.js](https://nodejs.org/) (Version 16.17.0 LTS)
 
 ### Recommended
 
@@ -25,15 +25,14 @@ https://www.erasedfiles.biz
 ## Development
 
 1. Clone and pull the repository.
-2. Run `npm install` from the project directory
+2. Run `npm ci` from the project directory
 
 ## Scripts
 
 - `npm run dev`
   - Launches the Python http server serving files from the `/source` directory
 - `npm run build`
-  - A series of scripts that processes and bundles the site into the `/build` directory suitable for deploying to production
-- `npm run stage`
-  - Builds the site from the current branch and deploys to Github Pages (which is used as a staging server).
+  - Processes and bundles the site into the `/release` directory suitable for
+    deploying to production
 - `npm run lint`
   - A series of scripts that lint the source code.
