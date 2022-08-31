@@ -21,8 +21,7 @@
     "dev": "browser-sync source --watch --no-ui --port 50002",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint \"source/**/*.css\" --custom-formatter ./lib/formatters/stylelint.js",
-    "lint:js": "eslint \"source/**/*.js\" \"lib/**/*.*js\" --format ./lib/formatters/eslint.js",
-    "stage": "npm run build && gh-pages -d build"
+    "lint:js": "eslint \"source/**/*.js\" \"lib/**/*.*js\" --format ./lib/formatters/eslint.js"
   },
   "devDependencies": {
     "@zulaica/site-bundler": "github:zulaica/site-bundler#v0.2.0",
