@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": ">=16"
+    "node": ">=16.17.0"
   },
   "repository": {
     "type": "git",
@@ -65,7 +65,7 @@
     "stylelint-prettier": "^2.0.0"
   },
   "volta": {
-    "node": "16.16.0",
-    "npm": "8.13.2"
+    "node": "16.17.0",
+    "npm": "8.15.0"
   }
 }
