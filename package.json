@@ -16,19 +16,11 @@
     "url": "https://github.com/zulaica/erased-files-dot-biz/issues"
   },
   "homepage": "https://github.com/zulaica/erased-files-dot-biz#readme",
-  "@comment scripts": {
-    "lint": [
-      "Linters exit with a non-zero code when warnings or errors are found.",
-      "In order to run both linters sequentially, `|| true` is used to coerce",
-      "an exit code of `0` to let the next command run."
-    ]
-  },
   "scripts": {
     "build": "personal-website-bundler",
     "dev": "browser-sync source --watch --no-ui",
-    "lint": "npm run lint:js || true && npm run lint:css || true && npm run lint:html",
+    "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint \"source/**/*.css\" --custom-formatter ./lib/formatters/stylelint.js",
-    "lint:html": "htmlhint \"source/**/*.html\" --ignore ./.htmlhintignore",
     "lint:js": "eslint \"source/**/*.js\" \"lib/**/*.*js\" --format ./lib/formatters/eslint.js",
     "stage": "npm run build && gh-pages -d build"
   },
