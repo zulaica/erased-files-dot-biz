@@ -3,9 +3,7 @@
 Thumbs.db
 
 # Dependencies
-node_modules/
+node_modules
 
 # Build Artifacts
-build/
-
-# Caches and Logs
+release

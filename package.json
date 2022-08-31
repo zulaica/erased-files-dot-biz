@@ -24,12 +24,7 @@
     ]
   },
   "scripts": {
-    "build": "npm run build:clean && npm run build:style && npm run build:script && npm run build:html && npm run build:images",
-    "build:clean": "node ./lib/utilities/removeDirectory.mjs ./build",
-    "build:html": "posthtml source/index.html -o build/index.html",
-    "build:images": "node ./lib/utilities/copyFiles.mjs ./source/images ./build/images",
-    "build:script": "browserify source/script.hash.js -o build/script.hash.js -t [ babelify ]",
-    "build:style": "postcss source/stylesheet.hash.css -o build/stylesheet.hash.css",
+    "build": "personal-website-bundler",
     "dev": "browser-sync source --watch --no-ui",
     "lint": "npm run lint:js || true && npm run lint:css || true && npm run lint:html",
     "lint:css": "stylelint \"source/**/*.css\" --custom-formatter ./lib/formatters/stylelint.js",
