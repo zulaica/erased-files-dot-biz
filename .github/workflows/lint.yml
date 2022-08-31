@@ -1,22 +1,30 @@
-name: Lint
+name: Lint Code Base
 
 on: pull_request
 
 jobs:
-  lint_code_base:
-    name: Lint Code Base
+  lint_javascript:
+    name: Lint JavaScript Files
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out branch
         uses: actions/checkout@v3
       - name: Install Node.js
         uses: volta-cli/action@v1
-      - name: Install linters
-        run: npm install prettier eslint eslint-config-prettier eslint-plugin-prettier stylelint stylelint-config-prettier stylelint-config-standard htmlhint
-      - name: Lint JavaScript files
+      - name: Install dependencies
+        run: npm ci
+      - name: Run lint script
         run: npm run lint:js
-      - name: Lint CSS files
+
+  lint_css:
+    name: Lint CSS Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: volta-cli/action@v1
+      - name: Install dependencies
+        run: npm ci
+      - name: Run lint script
         run: npm run lint:css
-      - name: Lint HTML files
-        run: npm run lint:html
