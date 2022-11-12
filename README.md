@@ -10,7 +10,6 @@ https://www.erasedfiles.biz
 
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - Source
   code management
-  - macOS users can install and manage `git` with [Homebrew](https://brew.sh)
 - [Node.js](https://nodejs.org/) (Version 16.18.1 LTS)
 
 ### Recommended
@@ -30,7 +29,7 @@ https://www.erasedfiles.biz
 ## Scripts
 
 - `npm run dev`
-  - Launches the Python http server serving files from the `/source` directory
+  - Launches the `browser-sync` server, serving files from the `/source` directory
 - `npm run build`
   - Processes and bundles the site into the `/release` directory suitable for
     deploying to production
