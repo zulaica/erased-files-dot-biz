@@ -1,12 +1,12 @@
 {
   "name": "erased-files-dot-biz",
   "author": "David Zulaica",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "Website for the band Erased Files",
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": ">=16.17.0"
+    "node": ">=16.18.1"
   },
   "repository": {
     "type": "git",
@@ -17,25 +17,25 @@
   },
   "homepage": "https://github.com/zulaica/erased-files-dot-biz#readme",
   "scripts": {
-    "build": "site-bundler",
+    "build": "site-bundler --input source --output release",
     "dev": "browser-sync source --watch --no-ui --port 50002",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint \"source/**/*.css\" --custom-formatter ./lib/formatters/stylelint.js",
     "lint:js": "eslint \"source/**/*.js\" \"lib/**/*.*js\" --format ./lib/formatters/eslint.js"
   },
   "devDependencies": {
-    "@zulaica/site-bundler": "github:zulaica/site-bundler#v0.2.1",
+    "@zulaica/site-bundler": "github:zulaica/site-bundler#v0.3.0",
     "browser-sync": "^2.27.10",
-    "eslint": "^8.19.0",
+    "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
-    "stylelint": "^14.9.1",
-    "stylelint-config-prettier": "^9.0.3",
+    "stylelint": "^14.14.1",
+    "stylelint-config-prettier": "^9.0.4",
     "stylelint-prettier": "^2.0.0"
   },
   "volta": {
-    "node": "16.17.0",
-    "npm": "8.15.0"
+    "node": "16.18.1",
+    "npm": "8.19.2"
   }
 }
