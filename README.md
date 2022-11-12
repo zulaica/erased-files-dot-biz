@@ -11,7 +11,7 @@ https://www.erasedfiles.biz
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - Source
   code management
   - macOS users can install and manage `git` with [Homebrew](https://brew.sh)
-- [Node.js](https://nodejs.org/) (Version 16.17.0 LTS)
+- [Node.js](https://nodejs.org/) (Version 16.18.1 LTS)
 
 ### Recommended
 
