@@ -1,8 +1,8 @@
-@import 'styles/fonts.css';
-@import 'styles/keyframes.css';
-@import 'styles/vars.css';
-@import 'styles/foundation.css';
-@import 'styles/container.css';
-@import 'styles/landmarks.css';
-@import 'styles/tablist.css';
-@import 'styles/discography.css';
+@import url('styles/fonts.css');
+@import url('styles/keyframes.css');
+@import url('styles/vars.css');
+@import url('styles/foundation.css');
+@import url('styles/container.css');
+@import url('styles/landmarks.css');
+@import url('styles/tablist.css');
+@import url('styles/discography.css');

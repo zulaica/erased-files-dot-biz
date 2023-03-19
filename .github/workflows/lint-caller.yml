@@ -1,0 +1,16 @@
+name: Lint Code Base
+
+on: pull_request
+
+jobs:
+  lint_js:
+    name: Lint Javascript Files
+    uses: ./.github/workflows/lint.yml
+    with:
+      file-extension: js
+
+  lint_css:
+    name: Lint CSS Files
+    uses: ./.github/workflows/lint.yml
+    with:
+      file-extension: css

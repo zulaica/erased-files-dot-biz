@@ -1,30 +1,23 @@
-name: Lint Code Base
-
-on: pull_request
+on:
+  workflow_call:
+    inputs:
+      file-extension:
+        required: true
+        type: string
 
 jobs:
-  lint_javascript:
-    name: Lint JavaScript Files
+  lint:
+    name: Run Workflow
     runs-on: ubuntu-latest
     steps:
       - name: Check out branch
         uses: actions/checkout@v3
       - name: Install Node.js
-        uses: volta-cli/action@v4
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: 'package.json'
+          cache: 'npm'
       - name: Install dependencies
         run: npm ci
       - name: Run lint script
-        run: npm run lint:js
-
-  lint_css:
-    name: Lint CSS Files
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out branch
-        uses: actions/checkout@v3
-      - name: Install Node.js
-        uses: volta-cli/action@v4
-      - name: Install dependencies
-        run: npm ci
-      - name: Run lint script
-        run: npm run lint:css
+        run: npm run lint:${{ inputs.file-extension }}
