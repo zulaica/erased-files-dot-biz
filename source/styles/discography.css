@@ -44,21 +44,27 @@
 }
 
 [aria-labelledby='discography'] article .listen-panel dl {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
   gap: 1em;
 }
 
 [aria-labelledby='discography'] article .listen-panel dd {
-  flex: 1 0 calc(33% - 1em);
-  max-width: calc(33% - 1em);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+[aria-labelledby='discography'] article .listen-panel dd img {
+  width: 1.825em;
+  height: auto;
+  border: 0;
 }
 
 [aria-labelledby='discography'] article .listen-panel dd a {
   white-space: nowrap;
   font-family: var(--font-family-body);
-  display: block;
-  text-align: center;
+  width: fit-content;
+  align-self: center;
 }
 
 [aria-labelledby='discography'] article table {
